@@ -8,31 +8,32 @@
 </head>
 
 <body ng-app="myApp">
-    <h1 class='page-header'>Waitstaff Calculator</h1>
-    <div class='div-body' ng-controller="WaitStaffCtrl as vm">
-        <table class="super" id='meal-details'>
-            <tr class='table-header'>
+    <h1 class="page-header">Waitstaff Calculator</h1>
+    <form name="myForm"  ng-controller="WaitStaffCtrl as vm">
+    <div class="div-body">
+        <table class="super" id="meal-details">
+            <tr class="table-header">
                 <td>
                     <h3>Enter the Meal Details</h3>
                 </td>
                 <td></td>
             </tr>
             <tr>
-                <td class='table-text'>Base Meal Price: $</td>
+                <td class="table-text">Base Meal Price: $</td>
                 <td>
-                    <input type='number' id='meal-price' ng-model="vm.mealPrice" required>
+                    <input type="number" id="meal-price" ng-model="vm.mealPrice" required>
                 </td>
             </tr>
             <tr>
-                <td class='table-text'>Tax Rate: % </td>
+                <td class="table-text">Tax Rate: % </td>
                 <td>
-                    <input type='number' id='tax-rate' ng-model="vm.taxRate" required>
+                    <input type="number" id="tax-rate" ng-model="vm.taxRate" required>
                 </td>
             </tr>
             <tr>
-                <td class='table-text'>Tip Percentage: %</td>
+                <td class="table-text">Tip Percentage: %</td>
                 <td>
-                    <input type='number' id='tip-percent' ng-model="vm.tipPercent">
+                    <input type="number" id="tip-percent" ng-model="vm.tipPercent" required>
                 </td>
             </tr>
             <tr>
@@ -43,12 +44,12 @@
                 <td></td>
                 <td></td>
             </tr>
-            <tr id='submission-row'>
+            <tr id="submission-row">
                 <td>
-                    <input type='button' id='submit' value='Submit' ng-click="vm.calculateCustomerCharges()">
+                    <input type="button" id="submit" value="Submit" ng-click="vm.calculateCustomerCharges()">
                 </td>
                 <td>
-                    <input type='submit' id='cancel' value='Cancel' ng-click="vm.cancelMealData()">
+                    <input type="submit" id="cancel" value="Cancel" ng-click="vm.cancelMealData()">
                 </td>
             </tr>
             <tr>
@@ -65,15 +66,15 @@
             </tr>
         </table>
         <table class="super">
-            <table class="sub" id='cust-info'>
-                <tr class='table-header'>
+            <table class="sub" id="cust-info">
+                <tr class="table-header">
                     <td>
                         <h3>Customer Charges</h3>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td class='table-text'>
+                    <td class="table-text">
                         Subtotal
                     </td>
                     <td>
@@ -81,7 +82,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class='table-text'>
+                    <td class="table-text">
                         Tip
                     </td>
                     <td>
@@ -90,7 +91,7 @@
                 </tr>
                 <hr/>
                 <tr>
-                    <td class='table-text'>
+                    <td class="table-text">
                         Total
                     </td>
                     <td>
@@ -98,7 +99,7 @@
                     </td>
                 </tr>
             </table>
-            <table class="sub" id='Earning-Info'>
+            <table class="sub" id="Earning-Info">
                 <tr class='table-header'>
                     <td>
                         <h3>My Earnings Info</h3>
@@ -106,23 +107,24 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <td class='table-text'>Tip Total: </td>
+                    <td class="table-text">Tip Total: </td>
                     <td>{{vm.tipTotal | currency}}</td>
                 </tr>
                 <tr>
-                    <td class='table-text'>Meal Count: </td>
+                    <td class="table-text">Meal Count: </td>
                     <td>{{vm.numberOfMeals | number}}</td>
                 </tr>
                 <tr>
-                    <td class='table-text'>Average Tip Per Meal: </td>
+                    <td class="table-text">Average Tip Per Meal: </td>
                     <td>{{vm.averageTip | currency}}</td>
                 </tr>
             </table>
         </table>
     </div>
+    </form>
     <br/>
     <br/>
-    <input type='reset' id='reset' value="reset" ng-click="vm.reset()">
+    <input type="submit" value="Reset" id="reset" ng-click="vm.resetData()">
 
     <script type="text/javascript" src="myApp.js"></script>
 </body>

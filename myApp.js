@@ -18,21 +18,16 @@ angular.module("myApp", [])
         }
 
         vm.cancelMealData = function(){
-        	vm.mealPrice = "";
-        	vm.taxRate = "";
-        	vm.tipPercent = "";
+        	vm.mealPrice = '';
+        	vm.taxRate = '';
+        	vm.tipPercent = '';
         }
 
-        vm.reset = function() {
-        	vm.mealPrice = "";
-        	vm.taxRate = "";
-        	vm.tipPercent = "";
-  			vm.subTotal = "";
-        vm.tip ="";
-        vm.total = "";
-        vm.tipTotal = "";
-        vm.numberOfMeals = "";
-        vm.averageTip = "";
+        vm.resetData = function() {
+        	vm.mealPrice ='';
+        	vm.taxRate = '';
+        	vm.tipPercent = '';
+        
         }
   
     });
