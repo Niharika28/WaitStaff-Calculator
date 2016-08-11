@@ -1,4 +1,4 @@
-angular.module("myApp", [])
+angular.module("myApp", ['ngMessages'])
     .controller('WaitStaffCtrl', function() {
         var vm = this;
         vm.subTotal = 0.00;
@@ -27,7 +27,12 @@ angular.module("myApp", [])
         	vm.mealPrice ='';
         	vm.taxRate = '';
         	vm.tipPercent = '';
-        
+          vm.subTotal = 0.00;
+        vm.tip = 0.00;
+        vm.total = 0.00;
+        vm.tipTotal = 0.00;
+        vm.numberOfMeals = 0;
+        vm.averageTip = 0.00;
         }
   
     });

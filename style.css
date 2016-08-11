@@ -1,3 +1,10 @@
+.div-body{
+  width: 1200px;
+  height: 600px;
+  margin: 5px auto;
+  border: 2px solid black;
+}
+
 .page-header {
 	text-align: center;
 	font-family: 'Comic Sans MS';
@@ -8,58 +15,48 @@ h3 {
 	font-size: 16px;
 
 }
-
-#meal-price {
-	width: 60px;	
-}
-
-#tax-rate {
-	width: 30px;
-}
-
-#tip-percent {
-	width: 30px;
-}
-
-.table-text {
-	text-align: right;
-}
-
 .super{
-
 	font-family: 'Comic Sans MS';
-	margin-right: 20px;
-	width: 300px;
-	position: relative;
-	left:300px;
+	width: 400px;
+	height: 800px;
+	margin-top: 20px;
+	 position: relative; 
+left:100px; 
 	border: 1px solid black;
 	border-collapse: collapse;
-	display: 'block';
 	float: left;
-	padding: 0;
-	margin-top: 0;
 }
 
+thead {
+	border: 1px solid black;
+	font-size: 24px;
+}
 .sub {
 	font-family: 'Comic Sans MS';
-	margin-right: 20px;
-	width: 300px;
-	position: relative;
-	left:300px;
-	border: 1px solid black;
-	border-collapse: collapse;
-	display: 'block';
-/* 	float: bottom; */
+	width: 400px;
+	height: 150px;
+	margin-top: 20px;
 	margin-bottom: 20px;
-	padding: 0;
-}
-
-.table-header {
+	 position: relative; 
+right:200px; 
 	border: 1px solid black;
 	border-collapse: collapse;
-	display: 'inline-block';
+	float: right;
 
 }
+
+.sub1{
+	font-family: 'Comic Sans MS';
+	width: 400px;
+	height: 150px;
+	margin-top: 200px;
+	position: relative;
+		left:200px;
+	float: right;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
 
 td {
 	height: 35px;
@@ -75,6 +72,25 @@ td {
 
 #reset {
 	position: relative;
-	left:1000px;
+	margin-top: 80px;
+	left:1050px;
 	text-align: right;
+}
+input.ng-pristine {
+    background-color: lightgrey;
+}
+input.ng-dirty {
+    background-color: lightgreen;
+}
+input.ng-valid {
+    background-color: orange;
+}
+.error {
+	color: red;
+}
+
+.displayError {
+	position: relative;
+	top: 320px;
+	right:200px;
 }
