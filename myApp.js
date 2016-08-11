@@ -24,6 +24,8 @@ angular.module("myApp", ['ngMessages'])
         }
 
         vm.resetData = function() {
+          vm.myForm.$setPristine();
+          vm.myForm.$setUntouched();
         	vm.mealPrice ='';
         	vm.taxRate = '';
         	vm.tipPercent = '';
